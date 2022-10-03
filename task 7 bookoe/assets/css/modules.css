@@ -1,0 +1,7 @@
+.purple {
+    color: var(--purple);
+}
+
+.back-purple {
+    background-color: var(--purple) ;
+}

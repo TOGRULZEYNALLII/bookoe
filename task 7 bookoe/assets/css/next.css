@@ -1,0 +1,14 @@
+.recomended {
+    background: url('../../img/recomended.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.popular {
+    background: url('../../img/popular.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookoe</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/mainswiper.css">
+    <link rel="stylesheet" href="/assets/css/modules.css">
+    <link rel="stylesheet" href="/assets/css/next.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="bg-white flex justify-between width-96 py-5 px-16 items-center">
+        <section>
+            <a href="/index.html">
+                <img src="/images/New folder/logo.png" alt="logo" class="w-40 ">
+            </a>
+        </section>
+        <form class="user-form w-6/12">
+            <div class="flex">
+                <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">menu</label>
+                <button id="dropdown-button"  data-dropdown-toggle="dropdownBottom" class="transition-all purple relative menu-dropdown flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center border border-gray-600 rounded-l-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-300 " type="button">
+                    <img src="/images/New folder/menus_logo.png" class="menus-logo w-4 mr-1" alt="menus logo" >
+                    Menus
+                    <svg aria-hidden="true" class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                
+                <div id="dropdown"
+                class="absolute top-16 menu-dropdown-content hidden z-10 w-44 bg-white border-gray-600 rounded divide-y shadow ">
+                <ul class="py-1 text-sm purple " aria-labelledby="dropdown-button">
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-300">Shopping</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-300">Images</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-300">News</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-gray-300">Finance</a>
+                  </li>
+
+                  <div class="relative w-full">
+                    <input type="search" id="search-dropdown"
+                      class=" block p-2.5 w-full z-20 text-sm text-gray-900 rounded-r-lg border-l-2 border border-gray-600 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400  "
+                      placeholder="Search" required>
+                    <button type="submit"
+                      class="transition-all absolute top-0 right-0 p-2.5 text-sm font-medium purple hover:bg-gray-300  rounded-r-lg border border-gray-600"><svg
+                        aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                      </svg></button>
+                  </div>
+                </div>
+              </form>
+          
+              <div class="h-full flex">
+                <button type="button"
+                  class="transition-all h-full bg-gray-300 rounded-lg py-2 px-4 purple font-bold mr-2 hover:bg-gray-200">Log
+                  In</button>
+                <button type="button"
+                  class="h-full flex transition-all text-white bg-indigo-600 rounded-lg py-2 px-4 purple font-bold hover:bg-indigo-500">
+                  <img src="/images/New folder/signup_logo.png" alt="signup logo" />
+                  Sign Up
+                </button>
+
+                </ul>
+              </div>
+            </div>
+        
+        </form>
+    
+    </header>
+
+    <main class="w-full py-5 px-16">
+        <section class="flex">
+          <div class="main-gallery w-3/4 rounded-2xl">
+            <div class="main-gallery-cell rounded-2xl py-16 px-16">
+              <p class="purple font-bold mb-4">BACK TO SCHOOL</p>
+              <h1 class="text-5xl font-bold mb-7">Special 50% Off</h1>
+              <p class="text-3xl mb-7">for our student community</p>
+              <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+              <div class="my-10 flex items-center">
+                <a class="mr-4 transition-all hover:bg-indigo-500 flex w-44 justify-between back-purple text-white rounded-3xl py-4 px-5"
+                  href="#">
+                  Get the deal
+                  <img src="/images/New folder/right-arrow.png" alt="arrow-right" />
+                </a>
+                <a class="border border-gray-600 transition-all hover:bg-gray-300 p-4 rounded-3xl" href="#">See other
+                  promos</a>
+              </div>
+            </div>
+            <div class="main-gallery-cell rounded-2xl py-16 px-16">
+              <p class="purple font-bold mb-4">BACK TO SCHOOL</p>
+              <h1 class="text-5xl font-bold mb-7">Special 70% Off</h1>
+              <p class="text-3xl mb-7">for our student community</p>
+              <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+              <div class="my-10 flex items-center">
+                <a class="mr-4 transition-all hover:bg-indigo-500 flex w-44 justify-between back-purple text-white rounded-3xl py-4 px-5"
+                  href="#">
+                  Get the deal
+                  <img src="/images/New folder/right-arrow.png" alt="arrow-right" />
+                </a>
+                <a class="border border-gray-600 transition-all hover:bg-gray-300 p-4 rounded-3xl" href="#">See other
+                  promos</a>
+              </div>
+            </div>
+            <div class="main-gallery-cell rounded-2xl py-16 px-16">
+              <p class="purple font-bold mb-4">BACK TO SCHOOL</p>
+              <h1 class="text-5xl font-bold mb-7">Special 80% Off</h1>
+              <p class="text-3xl mb-7">for our student community</p>
+              <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+              <div class="my-10 flex items-center">
+                <a class="mr-4 transition-all hover:bg-indigo-500 flex w-44 justify-between back-purple text-white rounded-3xl py-4 px-5"
+                  href="#">
+                  Get the deal
+                  <img src="/images/New folder/right-arrow.png" alt="arrow-right" />
+                </a>
+                <a class="border border-gray-600 transition-all hover:bg-gray-300 p-4 rounded-3xl" href="#">See other
+                  promos</a>
+              </div>
+            </div>
+            <div class="main-gallery-cell rounded-2xl py-16 px-16">
+              <p class="purple font-bold mb-4">BACK TO SCHOOL</p>
+              <h1 class="text-5xl font-bold mb-7">Special 90% Off</h1>
+              <p class="text-3xl mb-7">for our student community</p>
+              <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+              <div class="my-10 flex items-center">
+                <a class="mr-4 transition-all hover:bg-indigo-500 flex w-44 justify-between back-purple text-white rounded-3xl py-4 px-5"
+                  href="#">
+                  Get the deal
+                  <img src="/images/New folder/right-arrow.png" alt="arrow-right" />
+                </a>
+                <a class="border border-gray-600 transition-all hover:bg-gray-300 p-4 rounded-3xl" href="#">See other
+                  promos</a>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="w-1/4 a">
+            <!-- Slider main container -->
+            <div class="swiper best-seller bg-gray-400 mx-4 rounded-2xl h-full ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                  <p class="text-white text-center">Based sales this week</p>
+                  <div class="">
+                    <img class="" src="/images/New folder/books/1001656678502.png" alt="book-img" />
+                  </div>
+                  <p class="text-white font-bold text-center mb-4">Pushing Clouds</p>
+                  <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                  <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                    <p class="text-gray-300 mr-4 line-through">60.00</p>
+                    <p>USD 45.25</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                  <p class="text-white text-center">Based sales this week</p>
+                  <div class="">
+                    <img class="" src="/images/New folder/books/1001651662833.png" alt="book-img" />
+                  </div>
+                  <p class="text-white font-bold text-center mb-4">good for kids</p>
+                  <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                  <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                    <p class="text-gray-300 mr-4 line-through">60.00</p>
+                    <p>USD 45.25</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                  <p class="text-white text-center">Based sales this week</p>
+                  <div class="">
+                    <img class="" src="/images/New folder/books/9781617298899.png" alt="book-img" />
+                  </div>
+                  <p class="text-white font-bold text-center mb-4">excellent book</p>
+                  <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                  <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                    <p class="text-gray-300 mr-4 line-through">60.00</p>
+                    <p>USD 45.25</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                  <p class="text-white text-center">Based sales this week</p>
+                  <div class="">
+                    <img class="" src="/images/New folder/books/9781617297168.png" alt="book-img" />
+                  </div>
+                  <p class="text-white font-bold text-center mb-4">windows internal</p>
+                  <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                  <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                    <p class="text-gray-300 mr-4 line-through">60.00</p>
+                    <p>USD 45.25</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                  <p class="text-white text-center">Based sales this week</p>
+                  <div class="">
+                    <img class="" src="/images/New folder/books/9780137564095.png" alt="book-img" />
+                  </div>
+                  <p class="text-white font-bold text-center mb-4">Book</p>
+                  <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                  <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                    <p class="text-gray-300 mr-4 line-through">60.00</p>
+                    <p>USD 45.25</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-button-next text-white bg-gray-200 rounded-md"></div>
+              <div class="swiper-button-prev text-white bg-gray-200 rounded-md"></div>
+            </div>
+          </div>
+    
+        </section>
+      </main>
+    
+    
+      <section class="py-5 px-16 flex">
+        <div class="flex ">
+          <div class="w-40 mr-2">
+            <img class="w-full" src="/images/New folder/lightning.png" />
+          </div>
+          <div>
+            <h5 class="font-bold">Quick Delivery</h5>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+        </div>
+        <div class="flex ">
+          <div class="w-40 mr-2">
+            <img class="w-full" src="/images/New folder/secure.png" />
+          </div>
+          <div>
+            <h5 class="font-bold">Secure Payment</h5>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+        </div>
+        <div class="flex ">
+          <div class="w-40 mr-2">
+            <img class="w-full" src="/images/New folder/like.png" alt="zordu brat" />
+          </div>
+          <div>
+            <h5 class="font-bold">Best Quality</h5>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+        </div>
+        <div class="flex ">
+          <div class="w-40 mr-2">
+            <img class="w-full" src="/images/New folder/star.png" alt="ulduzdu brat" />
+          </div>
+          <div>
+            <h5 class="font-bold">Return Guarantee</h5>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+        </div>
+      </section>
+    
+      <section class="py-5 px-16 flex h-96  ">
+        <div class="recomended w-1/2 h-full p-6 rounded-md mr-2">
+          <h3 class="font-bold text-xl mb-2">Recomended For You</h3>
+          <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+          <div class="swiper recomended-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781617299827.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780137564279.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780137564279.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780137559534.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780137564095.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780137564279.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780137613663.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780137613663.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780983159230.png"
+                  alt="Best book" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+          </div>
+    
+    
+        <div class="popular w-1/2 h-full p-6 rounded-md">
+          <h3 class="font-bold text-xl mb-2">Popular in 2020</h3>
+          <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+          <div class="swiper popular-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781642002133.png"
+                  alt="Best book for reading" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781617299827.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781617298899.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781617298653.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781617297168.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781617295911.png"
+                  alt="Best book for reading" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781493773077.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9781492077213.png"
+                  alt="Best book" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="/images/New folder/books/9780983159230.png"
+                  alt="Best book" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    
+    
+    
+    
+      <!-- <div class="swiper swiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      </div> -->
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script src="/assets/js/script.js"></script>
+
+</body>
+</html>

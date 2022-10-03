@@ -1,0 +1,33 @@
+.main-gallery {
+    background: #EEE;
+  }
+  
+  .main-gallery-cell {
+    width: 100%;
+    height: 650px;
+    margin-right: 10px;
+    background: url('../../img/_carusel.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    counter-increment: gallery-cell;
+  }
+  
+  .flickity-page-dots {
+    bottom: 100px !important;
+    text-align:start !important; 
+    left: 100px !important;
+  }
+  
+  
+  
+  @media only screen and (max-width:568px) {
+    .main-gallery {
+      height: auto;
+    }
+  
+    .main-gallery-cell {
+      height: auto;
+    }
+    
+  }
